@@ -29,7 +29,6 @@ public class UserServiceImpl implements UserService {
         //不同操作系统处理字符串
         if (OSUtil.isWindows()) {
             pythonPath = pythonPath.substring(1, pythonPath.length());
-
         }
         log.info("==========pytjonpath2:" + pythonPath);
 //        System.out.println(pythonPath);

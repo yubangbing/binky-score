@@ -38,5 +38,10 @@ public class UserController {
 
         return "forward:/WEB-INF/"+soup+".jsp";
     }
+    @RequestMapping(value = "/test")
+    public String test1(String soup) {
+        System.out.println("ok");
+        return "forward:/WEB-INF/"+soup+".jsp";
+    }
 }
 

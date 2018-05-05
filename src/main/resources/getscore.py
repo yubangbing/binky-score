@@ -29,8 +29,10 @@ def DelLastChar(str):
     return "".join(str_list)
 def Start(username,password):
     currentday = datetime.datetime.now().day
+    currentmonth = datetime.datetime.now().month
     middle = currentday+24
-    jizhunBinky = str(currentday)+'22'+str(middle)+'43'
+    last = currentmonth+39
+    jizhunBinky = str(currentday)+'22'+str(middle)+str(last)
     #grade_htmlfile = 'grade_all.html'
     string = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"
     #String_cookie='ASP.NET_SessionId=z0xuou45vogazd55jc5o1q55; ASPSESSIONIDSQADTDCC=DGEPLEKABIBOBKBAAJGAFJMG; ASPSESSIONIDSSCASDDD=HLKNLFKALFPBGNMMEMNKEIJF; ASPSESSIONIDCSQBBSTB=DELHHMEBINPLGJOOGDPHAAJH; ASPSESSIONIDCQRDATTA=DIGPLLEBCEMLILFGKEPCHNGH; userint=Y30150649'
